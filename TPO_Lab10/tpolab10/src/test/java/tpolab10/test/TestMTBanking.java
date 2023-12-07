@@ -15,6 +15,7 @@ public class TestMTBanking {
     @Before
     public void setUp() {
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("https://mybank.by/main_unauthorised");
         PageFactory.initElements(driver, this);
     }
@@ -47,7 +48,7 @@ public class TestMTBanking {
         operationsPage.enterDateTo("25/01/2026");
         operationsPage.clickShowButton();
 
-        expectedText = "Значение поля не должно быть позже чем 02.12.2023";
+        expectedText = "Значение поля не должно быть позже чем 07.12.2023";
         actualText = operationsPage.getDateToValidationMessage();
         Assert.assertEquals(expectedText, actualText);
 

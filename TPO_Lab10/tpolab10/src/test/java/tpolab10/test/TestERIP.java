@@ -14,6 +14,7 @@ public class TestERIP {
     @Before
     public void setUp() {
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("https://mybank.by/main_unauthorised");
         PageFactory.initElements(driver, this);
     }

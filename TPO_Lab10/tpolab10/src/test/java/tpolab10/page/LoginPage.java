@@ -24,7 +24,7 @@ public class LoginPage {
 
     public void clickLoginButton() throws InterruptedException {
         loginButton.click();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     public void enterPhoneNumber(String phoneNumber) {
@@ -33,7 +33,7 @@ public class LoginPage {
 
     public void submitPhoneNumber() throws InterruptedException {
         phoneNumberField.sendKeys(Keys.ENTER);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     public void enterPassword(String password) {
@@ -42,6 +42,6 @@ public class LoginPage {
 
     public void submitPassword() throws InterruptedException {
         passwordField.sendKeys(Keys.ENTER);
-        Thread.sleep(2000);
+        Thread.sleep(5000);
     }
 }

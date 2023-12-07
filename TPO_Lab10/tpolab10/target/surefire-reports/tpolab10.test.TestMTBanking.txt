@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: tpolab10.test.TestMTBanking
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 13.933 s <<< FAILURE! - in tpolab10.test.TestMTBanking
+testCorrectData(tpolab10.test.TestMTBanking)  Time elapsed: 13.931 s  <<< ERROR!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f06fed22b60c8ddfc53148cdbf5af259, findElement {using=xpath, value=/html/body/div[1]/div/div/div[3]/div/div[2]/div[2]/div/div[2]/div/div/div/div/div[1]/div[1]/div[1]/div[1]/div/div[1]/div/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62017}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62017/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f06fed22b60c8ddfc53148cdbf5af259
+	at tpolab10.test.TestMTBanking.testCorrectData(TestMTBanking.java:36)
+
