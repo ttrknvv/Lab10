@@ -34,7 +34,7 @@ public class ERIPPage {
     public void clickProfile() throws InterruptedException {
         Thread.sleep(4000);
         iconProfile.click();
-        Thread.sleep(4000);
+        Thread.sleep(8000);
         buttonProfile.click();
         Thread.sleep(4000);
     }
