@@ -37,7 +37,7 @@ public class ERIPPage {
     }
     public void clickShowButton() throws InterruptedException {
         showButton.click();
-        Thread.sleep(8000);
+        Thread.sleep(14000);
     }
 
     public void clickElement() throws InterruptedException {
