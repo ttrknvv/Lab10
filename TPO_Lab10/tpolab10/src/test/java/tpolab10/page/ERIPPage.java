@@ -7,45 +7,55 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ERIPPage {
     private WebDriver driver;
-    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div/div[2]/div[2]/div/div[1]/div/div/div/div[1]/div[3]/div/div[2]/div[1]/div/div/div[2]/span")
-    private WebElement ERIPOperationPuth1;
+    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/header/div/div/div/div/button/div")
+    private WebElement iconProfile;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div/div[2]/div[2]/div/div[1]/div/div/div/div[1]/div[3]/div/div[3]/div[1]/input")
-    private WebElement ERIPInput;
+    @FindBy(xpath = "/html/body/div[12]/div/div/div/div/div/div/div[1]/span/div/div/div/div[3]")
+    private WebElement buttonProfile;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div/div[2]/div[2]/div/div[1]/div/div/div/div[1]/div[3]/div/div[3]/div[2]/button")
-    private WebElement showButton;
+    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div/div/div[1]/div/div/div[1]/button[2]/div/div")
+    private WebElement showProducts;
 
-    @FindBy(xpath = "/html/body/div[12]/div/div/div[2]/div[1]/fieldset/div/ul/li[1]")
-    private WebElement elementERIP;
+    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div/div/div[2]/div/div[2]/div/div/div/div[2]/div[1]/div/span/div/input")
+    private WebElement buttonDestroy;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div/div[2]/div[2]/div/div[1]/div/div/div/div[1]/div[3]/div/div[1]/h1")
+    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/header/div/div/span")
+    private WebElement buttonBackMain;
+    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div/div[1]/div/div/div/div/div/div")
+    private WebElement clickToverifyData;
+
+    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/header/div/div[2]/div/h1")
     private WebElement verifyData;
     public ERIPPage(WebDriver driver)
     {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    public void clickERIP() throws InterruptedException {
-        ERIPOperationPuth1.click();
+    public void clickProfile() throws InterruptedException {
+        Thread.sleep(4000);
+        iconProfile.click();
+        Thread.sleep(4000);
+        buttonProfile.click();
         Thread.sleep(4000);
     }
-    public void entereNumberERIP(String number)throws InterruptedException {
-        ERIPInput.click();
-        ERIPInput.sendKeys(number);
+    public void clickMyProducts()throws InterruptedException {
+        showProducts.click();
         Thread.sleep(4000);
     }
-    public void clickShowButton() throws InterruptedException {
-        showButton.click();
-        Thread.sleep(14000);
-    }
-
-    public void clickElement() throws InterruptedException {
-        elementERIP.click();
+    public void clickHideCard() throws InterruptedException {
+        buttonDestroy.click();
         Thread.sleep(4000);
     }
 
-    public String getDateFromValidationMessage() {
+    public void clickBackToMain() throws InterruptedException {
+        buttonBackMain.click();
+        Thread.sleep(8000);
+    }
+
+    public String getDateFromValidationMessage() throws InterruptedException {
+
+        clickToverifyData.click();
+        Thread.sleep(4000);
         return verifyData.getText();
     }
 }

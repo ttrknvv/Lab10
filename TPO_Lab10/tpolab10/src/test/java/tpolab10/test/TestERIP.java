@@ -31,15 +31,15 @@ public class TestERIP {
         loginPage.submitPassword();
 
         ERIPPage page = new ERIPPage(driver);
-        page.clickERIP();
+        page.clickProfile();
 
-        page.entereNumberERIP("123");
+        page.clickMyProducts();
 
-        page.clickShowButton();
+        page.clickHideCard();
 
-        page.clickElement();
+        page.clickBackToMain();
 
-        String expectedText = "Монтаж";
+        String expectedText = "SIMPLE MASTERCARD ZP INSTANT BYN";
         String actualText = page.getDateFromValidationMessage();
         Assert.assertEquals(expectedText, actualText);
 
