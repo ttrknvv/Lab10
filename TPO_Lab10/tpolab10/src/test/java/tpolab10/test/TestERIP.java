@@ -44,6 +44,7 @@ public class TestERIP {
 //        Assert.assertEquals(expectedText, actualText);
 //
 //        driver.quit();
+        Thread.sleep(20000);
         Assert.assertEquals(true, true);
     }
 }
