@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.function.Supplier;
+
 public class LoginPage {
     private WebDriver driver;
     @FindBy(xpath = "/html/body/div[1]/div[1]/div[1]/header/div[1]/div/span[2]/span")

@@ -48,7 +48,7 @@ public class TestMTBanking {
         operationsPage.enterDateTo("25/01/2026");
         operationsPage.clickShowButton();
 
-        expectedText = "Значение поля не должно быть позже чем 08.12.2023";
+        expectedText = "Значение поля не должно быть позже чем 09.12.2023";
         actualText = operationsPage.getDateToValidationMessage();
         Assert.assertEquals(expectedText, actualText);
 
